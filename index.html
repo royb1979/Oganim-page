@@ -102,11 +102,16 @@ button.secondary {
 button.secondary:hover {
     background-color: #48c9b0;
 }
+
+.brand { display:flex; align-items:center; gap:12px; justify-content:center; }
+.brand img { width:44px; height:44px; }
+.brand-title { font-size: 2.2rem; margin: 0; }
+@media (max-width:600px){ .brand-title{ font-size:1.8rem; } }
 </style>
-</head>
+<link href="favicon.svg" rel="icon" type="image/svg+xml"/></head>
 <body>
 <header>
-<h1>עוגנים – גישור משפחתי</h1>
+<div class="brand"><img alt="לוגו עוגנים" src="logo_anchor.svg"/><h1 class="brand-title">עוגנים – גישור משפחתי</h1></div>
 <p>מלווה זוגות בתחילת הדרך אל גירושין בהסכמה והורות משותפת מכבדת</p>
 </header>
 <section>
