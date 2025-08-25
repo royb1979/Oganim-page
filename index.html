@@ -1,145 +1,72 @@
 <!DOCTYPE html>
-
 <html dir="rtl" lang="he">
 <head>
-<meta charset="utf-8"/>
-<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<title>עוגנים – גישור משפחתי</title>
-<style>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <title>עוגנים – גישור משפחתי</title>
+  <style>
     body { font-family: Arial, sans-serif; margin: 0; padding: 0; background: #f9fafb; color: #333; direction: rtl; }
-    header { background: #006d77; color: white; text-align: center; padding: 2rem; }
-    header h1 { margin: 0; font-size: 2.2rem; }
+    header { background: #FFD6FF; color: #222; text-align: center; padding: 2rem; }
+    header h1 { margin: 0; font-size: 2.2rem; color:#000;}
     header p { margin-top: 0.5rem; font-size: 1.2rem; }
     section { padding: 2rem; max-width: 800px; margin: auto; }
-    h2 { color: #006d77; }
+    h2 { color: #C8C3EF; }
     .cta { text-align: center; margin: 2rem 0; }
-    .cta a { background: #83c5be; color: #000; padding: 1rem 2rem; border-radius: 8px; text-decoration: none; font-weight: bold; }
-    .cta a:hover { background: #006d77; color: #fff; }
-    footer { background: #006d77; color: white; text-align: center; padding: 1rem; margin-top: 2rem; }
-    .big-text { font-size: 1.6rem; font-weight: bold; text-align: center; color: #006d77; margin-top: 2rem; }
-  
-    body {
-        background: linear-gradient(135deg, #fceabb, #f8b500, #f6d365, #fda085);
-        font-family: Arial, sans-serif;
-        color: #333;
-    }
-    .container {
-        background: rgba(255, 255, 255, 0.9);
-        border-radius: 16px;
-        padding: 30px;
-        box-shadow: 0 4px 20px rgba(0,0,0,0.1);
-        max-width: 900px;
-        margin: 40px auto;
-    }
-    h1, h2 {
-        color: #444;
-    }
-    button {
-        background-color: #f8b500;
-        border: none;
-        padding: 12px 24px;
-        border-radius: 8px;
-        cursor: pointer;
-        color: white;
-        font-size: 16px;
-        transition: background-color 0.3s ease;
-    }
-    button:hover {
-        background-color: #d99600;
-    }
-    
-    body {
-        background: #f5f5f5; /* light gray */
-        font-family: Arial, sans-serif;
-        color: #333;
-    }
-    .container {
-        background: white;
-        border-radius: 16px;
-        padding: 30px;
-        border: 3px solid #5dade2; /* sea blue */
-        box-shadow: 0 4px 20px rgba(0,0,0,0.08);
-        max-width: 900px;
-        margin: 40px auto;
-    }
-    h1, h2 {
-        color: #2c3e50;
-    }
-    button {
-        background-color: #5dade2; /* sea blue */
-        border: none;
-        padding: 12px 24px;
-        border-radius: 8px;
-        cursor: pointer;
-        color: white;
-        font-size: 16px;
-        transition: background-color 0.3s ease;
-    }
-    button:hover {
-        background-color: #3498db; /* darker blue */
-    }
-    
-h1 {
-    color: #2c3e50;
-    border-bottom: 2px solid #76d7c4; /* soft green underline */
-    padding-bottom: 8px;
-}
-h2 {
-    color: #5dade2;
-}
-.highlight {
-    background-color: #fde2e2; /* soft pink background for highlight sections */
-    padding: 12px;
-    border-radius: 8px;
-    margin: 16px 0;
-}
-button.primary {
-    background-color: #5dade2; /* sea blue */
-}
-button.secondary {
-    background-color: #76d7c4; /* soft green */
-}
-button.secondary:hover {
-    background-color: #48c9b0;
-}
-
-.brand { display:flex; align-items:center; gap:12px; justify-content:center; }
-.brand img { width:44px; height:44px; }
-.brand-title { font-size: 2.2rem; margin: 0; }
-@media (max-width:600px){ .brand-title{ font-size:1.8rem; } }
-h1{color:#000}
-.brand-title{color:#000}
-</style>
-<link href="favicon.svg" rel="icon" type="image/svg+xml"/></head>
+    .cta a { display:inline-flex; align-items:center; gap:8px; background: #FFD6FF; color: #000; padding: 0.8rem 1.2rem; border-radius: 8px; text-decoration: none; font-weight: bold; border:1px solid #ddd;}
+    .cta a svg { width:20px; height:20px; }
+    .cta a:hover { opacity:0.85; }
+    footer { background: #FFD6FF; color: #222; text-align: center; padding: 1rem; margin-top: 2rem; }
+    .big-text { font-size: 1.6rem; font-weight: bold; text-align: center; color: #333; margin-top: 2rem; }
+    .container { background: white; border-radius: 16px; padding: 30px; border: 3px solid #C8C3EF; box-shadow: 0 4px 20px rgba(0,0,0,0.08); max-width: 900px; margin: 40px auto; }
+    .brand { display:flex; align-items:center; gap:12px; justify-content:center; }
+    .brand img { width:44px; height:44px; }
+    .brand-title { font-size: 2.2rem; margin: 0; color:#000; }
+    @media (max-width:600px){ .brand-title{ font-size:1.8rem; } }
+  </style>
+  <link rel="icon" type="image/svg+xml" href="favicon.svg"/>
+</head>
 <body>
 <header>
-<div class="brand"><img alt="לוגו עוגנים" src="logo_anchor.svg"/><h1 class="brand-title">עוגנים – גישור משפחתי</h1></div>
-<p>מלווה זוגות בתחילת הדרך אל גירושין בהסכמה והורות משותפת מכבדת</p>
+  <div class="brand">
+    <img src="logo_anchor.svg" alt="לוגו עוגנים"/>
+    <h1 class="brand-title">עוגנים – גישור משפחתי</h1>
+  </div>
+  <p>מלווה זוגות בתחילת הדרך אל גירושין בהסכמה והורות משותפת מכבדת</p>
 </header>
+<main class="container">
 <section>
-<h2>כמגשר מוסמך</h2>
-<p>אני מספק ליווי מקצועי לזוגות הנמצאים בתהליך פרידה או גירושין. הגישור מאפשר לכם להגיע להסכמות הוגנות ומאוזנות בנושאים מרכזיים כמו חלוקת רכוש, משמורת ילדים, מזונות ועוד - בסביבה בטוחה ונטולת עימות.</p>
-<h2>היתרונות של גישור:</h2>
-<ul>
-<li>חיסכון משמעותי בזמן ובכסף לעומת הליך משפטי ממושך</li>
-<li>שמירה על פרטיות וכבוד הדדי</li>
-<li>שליטה משותפת על התוצאות במקום החלטת בית משפט</li>
-<li>הקטנת הפגיעה הרגשית, במיוחד כשיש ילדים</li>
-<li>יצירת תקדים לתקשורת עתידית כהורים משותפים</li>
-</ul>
-<h2>השירות כולל:</h2>
-<p>ישיבות גישור מובנות, הכנת טיוטות הסכם, הכוונה משפטית בסיסית, וליווי עד להגשת ההסכם לבית המשפט. כל התהליך נערך בסודיות מלאה ובקצב המתאים לכם.</p>
-<p>גישור אינו מתאים לכל המקרים, אך עבור זוגות המוכנים לדיאלוג בונה, זו דרך מכבדת ויעילה לסיום מכובד של פרק זה בחייכם ותחילת פרק חדש המכבד אתכם.</p>
-<div class="cta">
-<a href="https://wa.me/972542090937">לתיאום שיחת היכרות בוואטסאפ</a>
-</div>
-<div class="cta">
-<a href="mailto:roygishor@gmail.com?subject=פנייה מעוגנים">או שלחו מייל</a>
-</div>
-<div class="big-text">אני פה אתכם ובשבילכם</div>
+  <h2>כמגשר מוסמך</h2>
+  <p>אני מספק ליווי מקצועי לזוגות הנמצאים בתהליך פרידה או גירושין. הגישור מאפשר לכם להגיע להסכמות הוגנות ומאוזנות בנושאים מרכזיים כמו חלוקת רכוש, משמורת ילדים, מזונות ועוד - בסביבה בטוחה ונטולת עימות.</p>
+  <h2>היתרונות של גישור:</h2>
+  <ul>
+    <li>חיסכון משמעותי בזמן ובכסף לעומת הליך משפטי ממושך</li>
+    <li>שמירה על פרטיות וכבוד הדדי</li>
+    <li>שליטה משותפת על התוצאות במקום החלטת בית משפט</li>
+    <li>הקטנת הפגיעה הרגשית, במיוחד כשיש ילדים</li>
+    <li>יצירת תקדים לתקשורת עתידית כהורים משותפים</li>
+  </ul>
+  <h2>השירות כולל:</h2>
+  <p>ישיבות גישור מובנות, הכנת טיוטות הסכם, הכוונה משפטית בסיסית, וליווי עד להגשת ההסכם לבית המשפט. כל התהליך נערך בסודיות מלאה ובקצב המתאים לכם.</p>
+  <p>גישור אינו מתאים לכל המקרים, אך עבור זוגות המוכנים לדיאלוג בונה, זו דרך מכבדת ויעילה לסיום מכובד של פרק זה בחייכם ותחילת פרק חדש המכבד אתכם.</p>
+
+  <div class="cta">
+    <a href="https://wa.me/972542090937">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" fill="#25D366"><path d="M16 0C7.163 0 0 7.163 0 16c0 2.885.76 5.702 2.204 8.173L0 32l7.61-2.138A15.9 15.9 0 0016 32c8.837 0 16-7.163 16-16S24.837 0 16 0z"/></svg>
+      וואטסאפ
+    </a>
+  </div>
+  <div class="cta">
+    <a href="mailto:roygishor@gmail.com?subject=פנייה מעוגנים">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#1DA1F2"><path d="M12 12.713l11.985-9.713H0L12 12.713zm0 2.574L0 5.74V18.26h24V5.74L12 15.287z"/></svg>
+      מייל
+    </a>
+  </div>
+
+  <div class="big-text">אני פה אתכם ובשבילכם</div>
 </section>
+</main>
 <footer>
-<p>© כל הזכויות שמורות – עוגנים</p>
+  <p>© כל הזכויות שמורות – עוגנים</p>
 </footer>
 </body>
 </html>
